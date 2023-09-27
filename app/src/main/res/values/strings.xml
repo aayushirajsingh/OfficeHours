@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OfficeHours</string>
+    <string name="start_time">Sign In time :</string>
+    <string name="end_time">Sign Out time :</string>
+    <string name="calculate">Calculate</string>
+    <string name="break_time">Break Time :</string>
+    <string name="start_time_in_am">start time</string>
+    <string name="break_time_taken">break time</string>
+    <string name="end_time_in_pm">end time</string>
+    <string name="total_hours">Work Hours</string>
+</resources>

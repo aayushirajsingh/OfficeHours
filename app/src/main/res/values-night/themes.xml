@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.OfficeHours" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/lavender</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/powder_blue</item>
+        <item name="android:navigationBarColor">@color/alice_blue</item>
+
+    </style>
+</resources>

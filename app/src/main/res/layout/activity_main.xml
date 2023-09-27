@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_shade"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/totalHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/total_hours"
+        android:textSize="16sp"
+        android:background="@drawable/round_edittext"
+        android:backgroundTint="@color/blush"
+        android:padding="8dp"/>
+
+    <TableLayout
+        android:id="@+id/ll_timeCal"
+        android:layout_below="@id/totalHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:background="@drawable/round_edittext"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/start_time"
+                android:gravity="end"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/signIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/round_edittext"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/start_time_in_am"
+                android:padding="5dp"
+                android:inputType="time"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/end_time"
+                android:gravity="end"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/signOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/round_edittext"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/end_time_in_pm"
+                android:padding="5dp"
+                android:inputType="time"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/break_time"
+                android:gravity="end"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/breakTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/round_edittext"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/break_time_taken"
+                android:padding="5dp"
+                android:inputType="number"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_timeCal"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/calculate" />
+
+
+</RelativeLayout>
